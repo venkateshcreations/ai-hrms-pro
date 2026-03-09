@@ -3,7 +3,7 @@ import Avatar from "../../components/ui/Avatar";
 import StatusChip from "../../components/ui/StatusChip";
 import PageHeader from "../../components/ui/PageHeader";
 import StatRow from "../../components/ui/StatRow";
-import { EMPLOYEES } from "../../data/employees";
+
 import { btn } from "../../styles/theme";
 const RECORDS=[{name:"Priya Sharma",avatar:"PS",in:"09:02 AM",out:"06:15 PM",hours:"9h 13m",status:"Present"},{name:"Marcus Johnson",avatar:"MJ",in:"08:45 AM",out:"05:30 PM",hours:"8h 45m",status:"Present"},{name:"Aiko Tanaka",avatar:"AT",in:"-",out:"-",hours:"-",status:"On Leave"},{name:"Carlos Rivera",avatar:"CR",in:"09:30 AM",out:"-",hours:"Active",status:"Present"},{name:"Liam O'Brien",avatar:"LO",in:"09:00 AM",out:"06:00 PM",hours:"9h 0m",status:"Present"},{name:"Wei Chen",avatar:"WC",in:"-",out:"-",hours:"-",status:"On Leave"}];
 export default function DailyAttendance() {
