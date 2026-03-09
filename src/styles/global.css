@@ -1,0 +1,86 @@
+/* ── Global Reset & Base Styles ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', 'Sora', sans-serif;
+  background: #F7F7F8;
+  color: #333333;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #E6E6E6; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #cccccc; }
+
+/* ── Utility Animations ──────────────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Reusable Classes ────────────────────────────────────────────────── */
+.pulse { animation: pulse 2s infinite; }
+.slide-down { animation: slideDown 0.2s ease; }
+.fade-in { animation: fadeIn 0.3s ease; }
+
+.hov-nav {
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+.hov-nav:hover {
+  background: #FFE8DA !important;
+  color: #FF8A3D !important;
+}
+
+.hov-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hov-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* ── Table Base ──────────────────────────────────────────────────────── */
+table { width: 100%; border-collapse: collapse; }
+
+th {
+  text-align: left;
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+/* ── Input Base ──────────────────────────────────────────────────────── */
+input, select, textarea {
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #FF8A3D !important;
+}
+
+button { font-family: 'DM Sans', sans-serif; }
