@@ -21,7 +21,7 @@
 | **Performance** | Goals/OKR, Reviews, 360° Feedback, Promotions |
 
 ### 🤖 AI-Powered Capabilities
-- **AI HR Assistant** — Full conversational AI powered by Claude (Anthropic)
+- **AI HR Assistant** — Full conversational AI
 - **Resume Screening** — AI analyses resumes and scores candidates automatically
 - **Live AI Insights** — Attrition risk, high performer detection, hiring forecasts
 
